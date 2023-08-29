@@ -1,25 +1,29 @@
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
     font-size: 1rem;
     font-weight: 700;
     overflow: hidden;
     color: #000;
+
 }
-a{
- text-decoration: none;
- color: black;
+
+a {
+    text-decoration: none;
+    color: black;
 }
-li{
+
+li {
     list-style-type: none;
 }
 
 
-.container{
+.container {
     width: 960px;
     margin: auto;
 }
@@ -27,59 +31,195 @@ li{
 
 
 
-.navber{
-    background-color:#fcfcfc;
+.navber {
+    background-color: #f8f8f8;
     padding: 20px 0;
-    
-}
-.navber-wrapper{
-    display: flex;
-    justify-content: space-between;
+
 }
 
-.nav-logo{
-    width: 70px;
-    
+.navber-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.nav-logo img{
+
+.nav-logo {
+    width: 70px;
+
+}
+
+.nav-logo img {
     width: 100%;
     border-radius: 50%;
 }
-.nav-logo img:hover{
+
+.nav-logo img:hover {
     cursor: pointer;
 }
-.nav-menu ul{
- display: flex;
- justify-content: space-between;
- text-transform: uppercase;
- 
+
+.nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
 }
-.nav-menu ul li{
+
+.nav-menu ul li {
     padding: 5px 15px;
     border-right: 1px solid rgb(230, 228, 228);
     font-size: 20px;
     color: ff5200;
-    
-    
+
+
 }
-.nav-menu ul li a{
+
+.nav-menu ul li a {
     color: #ff5200;
-    
-    
+
+
 }
-.nav-menu ul li:last-child{
+
+.nav-menu ul li:last-child {
     border: none;
-    
+
 }
-.nav-menu ul li:hover{
+
+.nav-menu ul li:hover {
     color: white;
-    background-color:#ff5200;
+    background-color: #ff5200;
     transition-duration: 1s, 5s;
     border: none;
     border-radius: 3px;
-    
-    
+
+
 }
-.nav-menu ul li:hover a{
+
+.nav-menu ul li:hover a {
     color: white;
+}
+
+
+/*-----------------------------
+ banner 
+ -----------------------*/
+
+.banner {
+    border: 1px solid;
+    margin: auto;
+    background-image: url("../images/banner/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+}
+.banner-info{
+    width: 50%;
+    margin-left: 20%;
+    transition-duration:3s;
+    
+
+
+}
+.banner h2{
+    font-size: 45px;
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px 0;
+}
+.banner p{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: rgb(134, 134, 134);
+}
+
+.banner button{
+    background-color: #ff5200;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 30%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+    body {
+        padding: 5px;
+    }
+
+    .navber-wrapper {
+        display: inline;
+    }
+
+    .nav-logo {
+        width: 700px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-logo img {
+        width: 10%;
+        border-radius: 50%;
+
+    }
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+    body {
+        padding: 5px;
+    }
+
+    .nav-logo {
+        margin-left: -35%;
+    }
+
+    .nav-menu ul {
+
+        display: inline;
+        text-transform: uppercase;
+
+    }
+
+    .nav-menu ul li {
+        padding-top: 20px;
+    }
+
+
 }

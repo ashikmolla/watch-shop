@@ -240,6 +240,62 @@ li {
   background-color: black;
 }
 
+footer {
+  background: rgb(31, 18, 18);
+  color: white;
+  padding: 50px 0;
+  margin-top: 60px;
+}
+footer .footer-wrapper {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer .footer-wrapper .footer-contact {
+  width: 50%;
+}
+footer .footer-wrapper .footer-contact h3 {
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+footer .footer-wrapper .footer-contact p {
+  font-size: 15px;
+  color: rgba(72, 72, 72, 0.7803921569);
+  margin-bottom: 40px;
+}
+footer .footer-wrapper .footer-contact i {
+  font-size: 28px;
+  border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+footer .footer-wrapper .footer-btn-email {
+  padding-left: 30px;
+}
+footer .footer-wrapper .footer-btn-email h3 {
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+footer .footer-wrapper .footer-btn-email input {
+  height: 30px;
+  width: 300px;
+  background: none;
+  padding: 5px;
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid white;
+}
+footer .footer-wrapper .footer-btn-email button {
+  background-color: #ff5200;
+  padding: 10px;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
 @media only screen and (max-width: 780px) {
   body {
     padding: 5px;
